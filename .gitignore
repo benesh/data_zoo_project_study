@@ -3,4 +3,5 @@
 yellow_tripdata_2021-01.csv/yellow_tripdata_2021-01.csv
 **/.terraform
 **/data/yellow/**
+**/__pycache__
 
