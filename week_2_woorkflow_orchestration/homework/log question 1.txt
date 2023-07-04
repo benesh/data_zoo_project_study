@@ -1,0 +1,48 @@
+
+(zooEnv) PS C:\Users\omarb\Workspace\data_zoo_project_study\week_2_woorkflow_orchestration\homework> python .\etl_web_to_gcs.py
+18:00:07.923 | INFO    | prefect.engine - Created flow run 'debonair-whippet' for flow 'etl-web-to-gcs'
+18:00:07.927 | INFO    | Flow run 'debonair-whippet' - View at http://127.0.0.1:4200/flow-runs/flow-run/4889c1d4-3f44-4067-8f96-b2120605d52c
+18:00:08.151 | INFO    | Flow run 'debonair-whippet' - Created task run 'fetch-0' for task 'fetch'
+18:00:08.151 | INFO    | Flow run 'debonair-whippet' - Executing 'fetch-0' immediately...
+C:\Users\omarb\Workspace\data_zoo_project_study\week_2_woorkflow_orchestration\homework\etl_web_to_gcs.py:13: DtypeWarning: Columns (3) have mixed types. Specify dtype option on import or set low_memory=False.
+  df= pd.read_csv(dataset_url)
+18:00:10.147 | INFO    | Task run 'fetch-0' - Finished in state Completed()
+18:00:10.188 | INFO    | Flow run 'debonair-whippet' - Created task run 'clean-0' for task 'clean'
+18:00:10.190 | INFO    | Flow run 'debonair-whippet' - Executing 'clean-0' immediately...
+18:00:10.837 | INFO    | Task run 'clean-0' -    VendorID lpep_pickup_datetime lpep_dropoff_datetime store_and_fwd_flag  ...  total_amount  payment_type  trip_type  congestion_surcharge
+0       2.0  2019-12-18 15:52:30   2019-12-18 15:54:39                  N  ...          4.81           1.0        1.0                   0.0
+1       2.0  2020-01-01 00:45:58   2020-01-01 00:56:39                  N  ...         24.36           1.0        2.0                   0.0
+
+[2 rows x 20 columns]
+18:00:10.840 | INFO    | Task run 'clean-0' - columns : VendorID                        float64
+lpep_pickup_datetime     datetime64[ns]
+lpep_dropoff_datetime    datetime64[ns]
+store_and_fwd_flag               object
+RatecodeID                      float64
+PULocationID                      int64
+DOLocationID                      int64
+passenger_count                 float64
+trip_distance                   float64
+fare_amount                     float64
+extra                           float64
+mta_tax                         float64
+tip_amount                      float64
+tolls_amount                    float64
+ehail_fee                       float64
+improvement_surcharge           float64
+total_amount                    float64
+payment_type                    float64
+trip_type                       float64
+congestion_surcharge            float64
+dtype: object
+18:00:10.844 | INFO    | Task run 'clean-0' - rows : 447770
+18:00:10.916 | INFO    | Task run 'clean-0' - Finished in state Completed()
+18:00:10.960 | INFO    | Flow run 'debonair-whippet' - Created task run 'write_local-0' for task 'write_local'
+18:00:10.962 | INFO    | Flow run 'debonair-whippet' - Executing 'write_local-0' immediately...
+18:00:12.300 | INFO    | Task run 'write_local-0' - Finished in state Completed()
+18:00:12.350 | INFO    | Flow run 'debonair-whippet' - Created task run 'write_gcs-0' for task 'write_gcs'
+18:00:12.351 | INFO    | Flow run 'debonair-whippet' - Executing 'write_gcs-0' immediately...
+18:00:12.565 | INFO    | Task run 'write_gcs-0' - Getting bucket 'dtc_data_lake_datazoo-0592'.
+18:00:12.817 | INFO    | Task run 'write_gcs-0' - Uploading from WindowsPath('data/green/green_tripdata_2020-01.parquet') to the bucket 'dtc_data_lake_datazoo-0592' path 'data\\green\\green_tripdata_2020-01.parquet'.
+18:00:13.447 | INFO    | Task run 'write_gcs-0' - Finished in state Completed()
+18:00:13.500 | INFO    | Flow run 'debonair-whippet' - Finished in state Completed('All states completed.')
