@@ -1,5 +1,7 @@
 **/logs	
-**/data
 **/ny_taxi_postgres_data
 yellow_tripdata_2021-01.csv/yellow_tripdata_2021-01.csv
 **/.terraform
+!**/data
+**/data/**
+!**data/green
