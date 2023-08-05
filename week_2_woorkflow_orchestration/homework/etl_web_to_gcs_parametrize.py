@@ -18,20 +18,20 @@ def fetch(dataset_url)-> pd.DataFrame:
 
 
 @task(log_prints=True)
-def clean(df : pd.DataFrame) -> pd.DataFrame:
+def clean(df : pd.DataFrame,color : str) -> pd.DataFrame:
 	"""Fix some dtype issues"""
-
-	df['tpep_pickup_datetime'] = pd.to_datetime(df['tpep_pickup_datetime'])
-	df['tpep_dropoff_datetime'] = pd.to_datetime(df['tpep_dropoff_datetime'])
-	print(df.head(2))
-	print(f"columns : {df.dtypes}")
-	print(f"rows : {len(df)}")
+	if color == 'yellow' :
+		df['tpep_pickup_datetime'] = pd.to_datetime(df['tpep_pickup_datetime'])
+		df['tpep_dropoff_datetime'] = pd.to_datetime(df['tpep_dropoff_datetime'])
+		print(df.head(2))
+		print(f"columns : {df.dtypes}") 
+		print(f"rows : {len(df)}")
 	return df
 
 @task()
 def write_local(df: pd.DataFrame, color :str , dataset_file : str ) -> Path:
 	""" Wite DataFRame out locally """
-	path = Path(f"data/{color}/{dataset_file}.parquet")
+	path = f"data/{color}/{dataset_file}.parquet"
 	df.to_parquet(path,compression="gzip")
 	return path 
 
@@ -52,8 +52,9 @@ def etl_web_to_gcs(month,color,year) -> None:
 	#dataset_url = "https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz"
 
 	df = fetch(dataset_url)
-	df_clean = clean(df)
-	path = write_local(df_clean, color, dataset_file)
+	df_clean = clean(df,color)
+	path:Path = write_local(df_clean, color, dataset_file)
+	
 	write_gcs(path)
 
 @flow(name="ETL parent",log_prints=True)
@@ -62,7 +63,9 @@ def etl_parent(months:list[int] = [1,2],color:str ="gren",year:int=2020)-> None:
 		etl_web_to_gcs(month,color,year)
 
 if __name__=='__main__':
-	color = "yellow"
+	color = "green"
 	year = 2019
-	months = [2,3]   
+	#months = [1,2,3,4,5,6,7,9,10]   
+	months = [11,12]   
+
 	etl_parent(months,color,year)

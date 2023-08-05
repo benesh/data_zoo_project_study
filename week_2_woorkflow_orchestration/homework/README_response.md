@@ -82,3 +82,6 @@ How many rows were processed by the script?
 - 192,297
 - 88,605
 - 190,225
+
+
+## Question 5 

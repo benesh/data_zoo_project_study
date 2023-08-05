@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "datazoo-0592",
+  "private_key_id": "1222fbd91a3948e15815a5bad3ff32cb669f9524",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCfJOqS6AK/kNYg\nhJ2WQyjrTCQsDm+imNB/V3I0lgfq0e9QZv7teoOn26PKuhis929GpfwqCKr1ssyb\nk1BxBvvCBxgLs1QJ2rZ8VeC3IkFtyDcz0nJXBcuVbZOLyCBvn5KTzWlbOFehM3NA\ndudCe13HLsKc9JO9yvhKon0sdZ58IE85e6VNccklM5NDv/nNmXU+NbtuTTZa4tQz\ncg6ytMnKymejf54+k6Zir1fFrG/6GAPRofp6WkDNogSwb6SXNc38gBdz8FwCBll2\nwJRjoQcWSXHSG3WuCuh53PljiMyymU9ieCSbQbP/M7dNQtOr9Gvw+4hES8vNVuqM\n7N9+ADnDAgMBAAECggEAHFguYWDqUGVDBgKosKEgkhv7G0+s6WhPRkb0Y9JO8a9X\ncNoPUIuwFD8F4q8XgwME8i/RBEmL7Xvdfl4UBzWHtIyf50GW17R5KRcAkY2L2ro8\nvsGeNMqm8mPUUiKgSFFDAYkl2SXlUaRAxDwJP2mKj9XPurXC9JxIcb6UDc2bHx84\nIJHYk8S9B6aSkiW/2YUB/sQ9Y5rwiwe0UaCD+0Ds2gz9RVHypopGFXDRh+AD8OAO\nuarZtQSnSlmrM+C7emidq707auJQsofzjzVNVfhwjxPzLrAh9WruJM8WKn8tCWQE\nwsQ2o+6EWXd1X+Kmjg/kBA6pDML34gK61zytsm53vQKBgQDPGn38pmvTvs1QotiY\ni9YLGmPBV8aa+3cb32pw52RIamx/nedv9q4tSNlIXjWbJuhH4IJodZcTtH2VjUTI\n2yZzGS9Xe7paKxeMlyUAOFJdMp3MooBA10aPhuHdCATNh3CH+gLLp6la5lI/nGOc\nQr8zZM3Na7+UIdXC84f/jBrJdQKBgQDEt7miQbwhGgqUgaTT4MXOC21DIrOm2tCt\nA9yBwmPm3eXBol6qQEmk7Vaoj6+uzvQhzLQpZTjP4zlB3nH8kxQDiVHuRrYIZozw\nLijq+wd2Cr3xFAfuN5Z2743yAVL9PLQesNK/GJzZT7b0v/5RMr3BlESDxtC9kIlq\nURWMb9NXVwKBgFSJLMn3KGZbKLV0c1L5KVqI4BUofhH++SRwcqM5YE7K2hTRYIns\nODaV2NNYWStGm2PTeYeoEA3kC6sC6gPOqIgszI06HNv3YPprK5hGZSBTq+O+pPlS\npiOp3AH75vH6Ce4HGCMHAfLvtrzuWh6LhD43NGZYR+/wS6/y9h1SlBCNAoGAO0IV\nG3mt0FLl6QJ8wo6tR3pNubGUaKj1v4iwPi5upbcmZQQifCrNhG8ycaiHBaO2CxB9\nHRMu4ADU2LDHqYwstTwCgEKwxysNPbTKAq8H+lkWCq88DFiWbNGQ8tvPQhWtNKmT\ncplZdmT6+hNz6sXcP5oIYaHcc548ptgyI5H0GhUCgYEAoHSgk1MIsNVyDYbCDJUA\nzpmE+iSwb6iHNwsQV9jtILNZDLf1pBzTUI3UV9dML/zg3pgiqSWxI8JS9MiGQooe\nJDU6SHWzq+ZWmjwPTc6KY3RRNteVVsDr5iR4hp2u8j0YvIJiRFaOonFWXfKh/Qly\nZ7eDG1lBN8YOmNXzUBYgyOo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "servicezooaccount@datazoo-0592.iam.gserviceaccount.com",
+  "client_id": "105979398276464271675",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/servicezooaccount%40datazoo-0592.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
