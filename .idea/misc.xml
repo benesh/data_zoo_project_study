@@ -1,3 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9" project-jdk-type="Python SDK" />
+  <component name="Black">
+    <option name="executionMode" value="BINARY" />
+    <option name="pathToExecutable" value="C:\Users\omarb\anaconda3\Scripts\black.exe" />
+    <option name="sdkUUID" value="20c399b6-3323-4632-baec-af78f354cf47" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="dataclub_env" project-jdk-type="Python SDK" />
 </project>

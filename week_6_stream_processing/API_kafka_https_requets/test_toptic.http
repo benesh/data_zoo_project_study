@@ -1,0 +1,70 @@
+# curl
+#  -X POST
+#  -H "Content-Type: application/json"
+#  -H "Authorization: Basic SlBSMlU3Rjc1SEZZTFlTNTpCcGFKbEYvNkliTkhtN0d2M0RDS0ZjVXlxWWtJd2NzZW5NUUNKS1hCWm9hN3h4QndSbnVRSWhhNVVxdHk0Q1M3"
+#  https://pkc-n3603.us-central1.gcp.confluent.cloud:443/kafka/v3/clusters/lkc-mkxk62/topics/test_topic/records
+#  -d '{"value":{"type":"JSON","data":"Hello World!"}}'
+POST https://pkc-n3603.us-central1.gcp.confluent.cloud:443/kafka/v3/clusters/lkc-mkxk62/topics/rides/records
+Authorization: Basic SlBSMlU3Rjc1SEZZTFlTNTpCcGFKbEYvNkliTkhtN0d2M0RDS0ZjVXlxWWtJd2NzZW5NUUNKS1hCWm9hN3h4QndSbnVRSWhhNVVxdHk0Q1M3
+Content-Type: application/json
+
+{
+  "value": {
+    "type": "JSON",
+    "data": "Hello World!"
+  }
+}
+
+###
+
+
+
+POST https://pkc-n3603.us-central1.gcp.confluent.cloud:443/kafka/v3/clusters/lkc-mkxk62/topics/rides/records
+Authorization: Basic BpaJlF/6IbNHm7Gv3DCKFcUyqYkIwcsenMQCJKXBZoa7xxBwRnuQIha5Uqty4CS7
+Content-Type: application/json
+
+{
+  "value": {
+    "type": "JSON",
+    "data": "Hello World!"
+  }
+}
+
+
+###
+
+# curl
+#  -X POST
+#  -H "Content-Type: application/json"
+#  -H "Authorization: Basic SEVXSVFVSVZXWEdNRFA2UTp4cHJwNkZKbUxqU0VqRTYwRDZsK3k5VmxtcDJpemk5b0U3dXpxZnlrbk1vcXhGeDYzMDlJM2pMWkp5WkxjdFE3"
+#  https://pkc-n3603.us-central1.gcp.confluent.cloud:443/kafka/v3/clusters/lkc-mkxk62/topics
+#  -d '{"topic_name":"rides_2"}'
+POST https://pkc-n3603.us-central1.gcp.confluent.cloud:443/kafka/v3/clusters/lkc-mkxk62/topics
+Authorization: Basic SEVXSVFVSVZXWEdNRFA2UTp4cHJwNkZKbUxqU0VqRTYwRDZsK3k5VmxtcDJpemk5b0U3dXpxZnlrbk1vcXhGeDYzMDlJM2pMWkp5WkxjdFE3
+Content-Type: application/json
+
+{
+  "topic_name": "rides_2"
+}
+
+###
+
+# curl
+#  -X POST
+#  -H "Content-Type: application/json"
+#  -H "Authorization: Basic SEVXSVFVSVZXWEdNRFA2UTp4cHJwNkZKbUxqU0VqRTYwRDZsK3k5VmxtcDJpemk5b0U3dXpxZnlrbk1vcXhGeDYzMDlJM2pMWkp5WkxjdFE3"
+#  https://pkc-n3603.us-central1.gcp.confluent.cloud:443/kafka/v3/clusters/lkc-mkxk62/topics/rides_2/records
+#  -d '{"value":{"type":"JSON","data":"Hello World!"}}'
+POST https://pkc-n3603.us-central1.gcp.confluent.cloud:443/kafka/v3/clusters/lkc-mkxk62/topics/rides_2/records
+Authorization: Basic SEVXSVFVSVZXWEdNRFA2UTp4cHJwNkZKbUxqU0VqRTYwRDZsK3k5VmxtcDJpemk5b0U3dXpxZnlrbk1vcXhGeDYzMDlJM2pMWkp5WkxjdFE3
+Content-Type: application/json
+
+{
+  "value": {
+    "type": "JSON",
+    "data": "Hello my Omar kitelmazdzahbdhaz dhza !"
+  }
+}
+
+###
+

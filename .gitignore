@@ -5,4 +5,4 @@ yellow_tripdata_2021-01.csv/yellow_tripdata_2021-01.csv
 **/data/*
 **/__pycache__/*
 **/credentials/
-
+**/tmp/*

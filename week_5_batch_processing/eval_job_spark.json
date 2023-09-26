@@ -1,0 +1,48 @@
+{
+  "reference": {
+    "jobId": "job-1ebae35a",
+    "projectId": "datazoo-0592"
+  },
+  "placement": {
+    "clusterName": "data-zoocamp-cluster"
+  },
+  "status": {
+    "state": "DONE",
+    "stateStartTime": "2023-08-16T05:37:15.073351Z"
+  },
+  "yarnApplications": [
+    {
+      "name": "MyApp",
+      "state": "FINISHED",
+      "progress": 1,
+      "trackingUrl": "http://data-zoocamp-cluster-m.us-central1-f.c.datazoo-0592.internal.:8088/proxy/application_1692137526391_0002/"
+    }
+  ],
+  "statusHistory": [
+    {
+      "state": "PENDING",
+      "stateStartTime": "2023-08-16T05:36:04.573013Z"
+    },
+    {
+      "state": "SETUP_DONE",
+      "stateStartTime": "2023-08-16T05:36:04.615134Z"
+    },
+    {
+      "state": "RUNNING",
+      "details": "Agent reported job success",
+      "stateStartTime": "2023-08-16T05:36:04.944255Z"
+    }
+  ],
+  "driverControlFilesUri": "gs://dataproc-staging-us-central1-556448424892-goupxjw0/google-cloud-dataproc-metainfo/e10e5eff-da75-4864-aa1d-890cd286b11e/jobs/job-1ebae35a/",
+  "driverOutputResourceUri": "gs://dataproc-staging-us-central1-556448424892-goupxjw0/google-cloud-dataproc-metainfo/e10e5eff-da75-4864-aa1d-890cd286b11e/jobs/job-1ebae35a/driveroutput",
+  "jobUuid": "8c07321b-f652-4bbf-a66b-6c59986eab2d",
+  "done": true,
+  "pysparkJob": {
+    "mainPythonFileUri": "gs://data_zoo_bucket_free/code/10_CReate_local_cluster_cloud_code.py",
+    "args": [
+      "--input_green=gs://data_zoo_bucket_free/data/pq/green/2021/*/",
+      "--input_yellow=gs://data_zoo_bucket_free/data/pq/yellow/2021/*/",
+      "--output=gs://data_zoo_bucket_free/data/report-2021"
+    ]
+  }
+}
